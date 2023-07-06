@@ -1,0 +1,248 @@
+
+/*Main Início*/
+.conteudo,
+.conteudo__search,
+.search__filter,
+.modal,
+.modal__content,
+.modalFilter.open,
+.modalFilter.open li,
+.modal__button{
+    display: flex;
+    align-items: center;
+}
+
+.conteudo{
+    width: 100vw;
+    max-width: 1200px;
+    margin: 100px auto 0;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.conteudo__results{
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.conteudo__search > * {
+    margin-bottom: 20px;
+}
+.conteudo__search{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+}
+.conteudo__search span{
+    font-weight: bold;
+}
+
+.conteudo__search .search{
+    text-indent: 50px;
+    width: 85%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    border: none;
+    box-shadow: 5px 10px 16px #CCCCCC;
+}
+
+/* input[type="search"].search{
+
+} */
+
+.search__filter{
+    width: 30vw;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    margin-left: 100px;
+}
+
+.modal{
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.modal__content{
+    position: relative;
+    flex-direction: column;
+}
+
+.modal:nth-child(3){
+    margin-right: none;
+}
+
+.modal__button{
+    justify-content: center;
+    width: 110px;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    box-shadow: 5px 10px 16px #CCCCCC;
+    cursor: pointer;
+}
+.modal__button button{
+    border: none;
+    background-color: #F2F2F2;
+    line-height: 1.5em;
+    margin-left: 5px;
+}
+
+.arrow__icon{
+    width: 15%;
+    margin-left: 5px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.arrow__icon.open{
+    width: 15%;
+    margin-left: 5px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+}
+
+.modalFilter{
+    display: none;
+}
+
+.modalFilter.open{
+    width: 130px;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    z-index: 5;
+    position: absolute;
+    top: 3rem;
+
+    animation: modal 1s;
+}
+
+@keyframes modal {
+    from{
+        opacity: 0;
+        transform: translate3d(0,-50px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.modalFilter.open li{
+    width: 100%;
+    justify-content: center;
+    font-size: 0.5em;
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+
+.modalFilter.open  li label{
+    text-indent: 5px;
+}
+
+.modalFilter, .modalFilter > * {
+    display: none;
+}
+
+
+/* Conteudo Results*/
+.conteudo__results{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.card{
+    width: 330px;
+    height: 140px;
+    border: 1px solid rgba(204, 204, 204, 0.7);
+    border-bottom: none;
+    display: flex;
+    border-radius: 15px;
+    box-shadow:  0 15px 20px rgb(204, 204, 204);
+    margin: 0 0 25px;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    border-radius: 15px;
+    margin-left: 15px ;
+}
+
+.info__name{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.info__stats{
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats__attack, .stats__defense{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.stats{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.stats__text{
+    color: #3d3d3d;
+    font-size: 0.8em;
+}
+
+.card__types{
+    display: flex;
+    width: 130%;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.card__types p{
+    background-color: red;
+    text-align: center;
+    font-size: 0.8em;
+    width: 50%;
+    margin-right: 10px;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.card__types p:nth-child(2){
+    margin-right: 0;
+}
+
+.card__image{
+    border-radius: 0 15px 15px 0;
+}
+
+.card__image img{
+    margin-top: 10px;
+    width: 200px;
+    height: 90%;
+    border-radius: 0 15px 15px 0;
+}
+/*Main Fim*/

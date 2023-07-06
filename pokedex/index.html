@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/globalStyle.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/darkMode.css">
+    <title>Pokédex</title>
+    <script src="src/services/getPokemonNameApi.js"></script>
+</head>
+<body>
+    <header>    
+        <div class="cabecalho">
+            <img src="src/assets/Logo.png" alt="Logotipo de Pokémon" class="cabecalho__logo">
+            <nav class="cabecalho__nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Pokédex</a></li>
+                    <li><a href="#">Legendaries</a></li>
+                    <li><a href="#">Documentarion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo__search">
+            <p>All <span>Pokemons</span> for you chose your favorite</p>
+            <input id="search" class="search" type="search" placeholder="Encontre seu Pokemon"/>
+            <div class="search__filter">
+                <div class="modal">
+                    <div class="modal__content">
+                        <div class="modal__button">
+                            <button id="type">Tipo</button>
+                            <img key="modalType" class='arrow__icon' src="src/assets/arrow.png" alt="Seta">
+                        </div>
+                        <ul id="modalType"class="modalFilter"></ul>
+                    </div>
+                </div>
+                <div class="modal">
+                    <div class="modal__content">
+                        <label class="modal__button">
+                            <button id="region">Região</button>
+                            <img key="modalRegion" class='arrow__icon' src="src/assets/arrow.png" alt="Seta">
+                        </label>
+                        <ul id="modalRegion"class="modalFilter"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="render" class="conteudo__results">
+            
+        </section>
+        <script type="module" src="src/savePokemonApi.js"></script>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__element">
+            <p>Make with <span class="heart__icon">❤</span> for the PokéSpartans team Platzi Master</p>
+            <p>Ours Team</p>
+        </div>
+    </footer>
+</body>
+</html>
