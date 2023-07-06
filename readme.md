@@ -22,20 +22,16 @@
 </h3>
 <ul style ="list-style-type:none">
         <li style="display:flex;      align-items:stretch"> 
-            <img width="25" height="25" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/> 
-            <p style="text-align:center">HTML</p>
+            <img width="25" height="25" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/> HTML
         </li>
         <li style="display:flex"> 
-            <img width="25" height="25" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
-            <p>CSS</p>
+            <img width="25" height="25" src="https://img.icons8.com/color/48/css3.png" alt="css3"/> CSS
         </li>
         <li style="display:flex;align-items:stretch"> 
-            <img width="25" height="25" src="https://img.icons8.com/color/25/javascript--v1.png" alt="javascript--v1"/>
-            <p style="text-align:center">JavaScript</p>
+            <img width="25" height="25" src="https://img.icons8.com/color/25/javascript--v1.png" alt="javascript--v1"/> JavaScript
         </li>
         <li style="display:flex"> 
-            <img width="23" height="23" src="https://img.icons8.com/ultraviolet/23/react--v1.png" alt="react--v1"/> 
-            <p> React</p>
+            <img width="23" height="23" src="https://img.icons8.com/ultraviolet/23/react--v1.png" alt="react--v1"/> React
         </li>
     </ul>
 
