@@ -1,5 +1,5 @@
 
-<h1> Modulo III - Pokedéx</h1>
+<h1> Primeiras Páginas Interativas com JavaScript - Pokedéx</h1>
 <h2 align="center">
     <img src="src/assets/pokedex.png" width="250px">
 </h2>
